@@ -1,73 +1,151 @@
-# Welcome to your Lovable project
+# HandyDeviceSetup
 
-## Project info
+A modern, responsive web application for a home entertainment device setup and installation service. This project is a professional business website built with React and modern web technologies, featuring smooth animations, beautiful UI components, and comprehensive service information.
 
-**URL**: https://lovable.dev/projects/ab1f2552-d9a9-482a-a892-e82e4edc36fa
+## 🎯 About the Project
 
-## How can I edit this code?
+HandyDeviceSetup is a full-featured website designed for a home entertainment setup service company. The platform provides information about various services including TV mounting, home theater installation, streaming device setup, and smart home integration. This project demonstrates modern web development practices with a focus on user experience, responsive design, and clean code architecture.
 
-There are several ways of editing your application.
+## ✨ Features
 
-**Use Lovable**
+- **Modern UI/UX Design**: Beautiful, responsive interface built with Tailwind CSS and shadcn/ui components
+- **Smooth Animations**: Page transitions and scroll animations powered by Framer Motion
+- **Multi-page Navigation**: 
+  - Home page with hero section, services, features, testimonials, and blog preview
+  - Services page with detailed service information
+  - About page with company information
+  - Blog page with articles and guides
+  - Contact page with contact form
+  - Terms and Privacy pages
+  - PrimeVideo TV setup guide
+- **Responsive Design**: Fully responsive layout that works seamlessly on desktop, tablet, and mobile devices
+- **Fast Performance**: Optimized build with Vite for lightning-fast load times
+- **TypeScript Support**: Type-safe codebase for better development experience
+- **SEO Friendly**: Proper routing and meta tags for better search engine optimization
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ab1f2552-d9a9-482a-a892-e82e4edc36fa) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend Framework**: React 18.3.1
+- **Build Tool**: Vite 5.4.1
+- **Language**: TypeScript 5.5.3
+- **Styling**: Tailwind CSS 3.4.11
+- **UI Components**: shadcn/ui (Radix UI primitives)
+- **Routing**: React Router DOM 6.26.2
+- **Animations**: Framer Motion 12.12.1
+- **Icons**: React Icons 5.5.0
+- **Form Handling**: React Hook Form 7.56.4 with Zod validation
+- **State Management**: TanStack Query 5.56.2
 
-**Use your preferred IDE**
+## 📋 Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Before you begin, ensure you have the following installed on your system:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Node.js**: Version 18.x or higher ([Download Node.js](https://nodejs.org/))
+- **npm**: Comes bundled with Node.js (or use yarn/pnpm as an alternative)
 
-Follow these steps:
+## 🚀 How to Run the Project
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Step 1: Install Dependencies
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+First, navigate to the project directory and install all required dependencies:
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Step 2: Start the Development Server
+
+Run the development server with hot-reload:
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Step 3: Build for Production (Optional)
 
-**Use GitHub Codespaces**
+To create a production build:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run build
+```
 
-## What technologies are used for this project?
+This will create an optimized production build in the `dist` directory.
 
-This project is built with:
+### Available Scripts
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint to check code quality
 
-## How can I deploy this project?
+## 📁 Project Structure
 
-Simply open [Lovable](https://lovable.dev/projects/ab1f2552-d9a9-482a-a892-e82e4edc36fa) and click on Share -> Publish.
+```
+handy-device-setup/
+├── public/                 # Static assets
+│   ├── favicon.ico
+│   ├── robots.txt
+│   └── web.config
+├── src/
+│   ├── components/         # Reusable React components
+│   │   ├── ui/            # shadcn/ui components
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── ServiceCard.jsx
+│   │   └── ...
+│   ├── pages/             # Page components
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Services.jsx
+│   │   ├── Blog.jsx
+│   │   ├── Contact.jsx
+│   │   └── ...
+│   ├── constants/         # Constants and data
+│   │   └── index.js
+│   ├── hooks/             # Custom React hooks
+│   ├── lib/               # Utility functions
+│   ├── utils/             # Helper utilities
+│   ├── App.tsx            # Main App component
+│   ├── main.tsx           # Application entry point
+│   └── index.css          # Global styles
+├── dist/                  # Production build output
+├── package.json           # Project dependencies
+├── vite.config.ts         # Vite configuration
+├── tailwind.config.ts     # Tailwind CSS configuration
+└── tsconfig.json          # TypeScript configuration
+```
 
-## Can I connect a custom domain to my Lovable project?
+## 🎨 Key Components
 
-Yes, you can!
+- **Navbar**: Responsive navigation bar with mobile menu
+- **Hero**: Eye-catching hero section with call-to-action
+- **ServiceCard**: Reusable card component for displaying services
+- **FeatureCard**: Component for showcasing company features
+- **TestimonialCard**: Customer testimonial display component
+- **BlogPostCard**: Blog post preview card
+- **ContactForm**: Contact form with validation
+- **CallButton**: Floating call button for easy contact
+- **Footer**: Comprehensive footer with links and information
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🌐 Pages
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- **Home** (`/`): Landing page with all main sections
+- **About** (`/about`): Company information and mission
+- **Services** (`/services`): Detailed service offerings
+- **Blog** (`/blog`): Blog posts and articles
+- **Contact** (`/contact`): Contact form and information
+- **Terms** (`/terms`): Terms of service
+- **Privacy** (`/privacy`): Privacy policy
+- **PrimeVideo TV Setup** (`/primevideocomtv`): Setup guide for PrimeVideo TV
+
+## 🔧 Project Configuration
+
+The project uses:
+- **Vite** as the build tool (configured in `vite.config.ts`)
+- **Tailwind CSS** for styling (configured in `tailwind.config.ts`)
+- **TypeScript** for type safety (configured in `tsconfig.json`)
+
+The development server runs on port 8080 by default.
